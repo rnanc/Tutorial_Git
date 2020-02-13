@@ -82,5 +82,5 @@ $ git push origin feat/<nome da feature>
 
 ## Vídeos
 
-* [Tutorial Básico de Git](https://www.youtube.com/watch?v=2alg7MQ6_sI&t=582s)
-* [Biblioteca de Padronização de Commit](https://www.youtube.com/watch?v=erInHkjxkL8&t=1020s)
+* [Tutorial Básico de Git](https://www.youtube.com/watch?v=2alg7MQ6_sI&t)
+* [Biblioteca de Padronização de Commit](https://www.youtube.com/watch?v=erInHkjxkL8&t)
