@@ -1,4 +1,6 @@
 # Tutorial Git
+![git-icon](https://github.com/rnanc/Tutorial_Git/blob/master/icons8-git-48.png)
+![github-icon](https://github.com/rnanc/Tutorial_Git/blob/master/icons8-github-50.png)
 
 Tutorial de uso básico do git com sugestão de padrão de commit e fluxo de trabalho.
 
