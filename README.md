@@ -5,50 +5,50 @@ Tutorial de uso básico do git com sugestão de padrão de commit e fluxo de tra
 ## Via terminal
 O uso do terminal para comandos do git é recomendado pois nos garante maior controle sobre as operações.
 
-### Criando o repositório e fazendo o primeiro push
+## Criando o repositório e fazendo o primeiro push
 
-Acesse a pasta do seu projeto, independente se já contém arquivos ou não e execute o comando para iniciar o repositório na sua máquina(caso a pasta de seu projeto tenha sido clonada de um repositório pré-existente, este comando se faz desnecessário):
+**Acesse a pasta do seu projeto, independente se já contém arquivos ou não e execute o comando para iniciar o repositório na sua máquina(caso a pasta de seu projeto tenha sido clonada de um repositório pré-existente, este comando se faz desnecessário):**
 
 ```
 git init
 ```
-Após ter terminado todas as alterações necessárias, adione as mudanças que estão prontas para o commit com o comando:
+**Após ter terminado todas as alterações necessárias, adione as mudanças que estão prontas para o commit com o comando:**
 
 ```
 git add .
 ```
 
-Tendo todas as mudanças adicionadas e prontas para um commit, execute o commit com o comando:
+**Tendo todas as mudanças adicionadas e prontas para um commit, execute o commit com o comando:**
 
 ```
 git commit -m "<mensagem obrigatória>"
 ```
 
-O commit cria um marco em sua linha do tempo, onde todas as alterações agora estão gravadas, caso você esteja em um repositório criado em  sua máquina, neste passo você deverá criar um repositório no [github](http://github.com/) e para fazer o link do seu repositório local com o remoto, executar o comando:
+**O commit cria um marco em sua linha do tempo, onde todas as alterações agora estão gravadas, caso você esteja em um repositório criado em  sua máquina, neste passo você deverá criar um repositório no [github](http://github.com/) e para fazer o link do seu repositório local com o remoto, executar o comando:**
 
 ```
 git remote add origin <link do seu repositório>
 ```
-Finalmente chegou a hora de enviar seu código para o repositório remoto, com o comando:
+**Finalmente chegou a hora de enviar seu código para o repositório remoto, com o comando:**
 
 ```
 git push origin master
 ```
+**Agora seu código ja estará visível no github.**
 
-### Installing
+## Padronizando mensagens de commit
 
-A step by step series of examples that tell you how to get a development env running
+A padronização das mensagens de commit organiza e facilita a revisão do código e orienta durante a resolução de possíveis conflitos quando se trabalha em time.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+> O padrão sugerido usa como referência os descritos pelo [commitizen](https://github.com/commitizen/cz-cli).
 
 ```
-until finished
+feat:<mensagem> - Usado para descrever a adição de uma nova funcionalidade no código.
+fix:<mensagem> - Usado para quando um bug é removido do código.
+docs:<mensagem> - Usado para mudanças somente na documentção do projeto.
+refactor:<mensagem> - Usado para quando a mudança se refere ao refatoramento.
+perf:<mensagem> - Usado para código de melhoria de performace.
+chore:<mensagem> - Usado para se referir a expansão de uma feature.
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
