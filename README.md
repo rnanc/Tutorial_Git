@@ -2,6 +2,10 @@
 
 Tutorial de uso básico do git com sugestão de padrão de commit e fluxo de trabalho.
 
+## Sumário
+- [Criando o primeiro repositório](#criando-o-repositório-e-fazendo-o-primeiro-push)
+- [Padronizando commits](#padronizando-mensagens-de-commit)
+
 ## Via terminal
 O uso do terminal para comandos do git é recomendado pois nos garante maior controle sobre as operações.
 
