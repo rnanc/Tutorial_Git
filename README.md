@@ -62,7 +62,7 @@ A padronização das mensagens de commit organiza e facilita a revisão do códi
 
 * `feat:<mensagem>` - Usado para descrever a adição de uma nova funcionalidade no código.
 * `fix:<mensagem>` - Usado para quando um bug é removido do código.
-* `docs:< mensagem >` - Usado para mudanças somente na documentção do projeto.
+* `docs:<mensagem>` - Usado para mudanças somente na documentção do projeto.
 * `refactor:<mensagem>` - Usado para quando a mudança se refere ao refatoramento.
 * `perf:<mensagem>` - Usado para código de melhoria de performace.
 * `chore:<mensagem>` - Usado para se referir a expansão de uma feature.
