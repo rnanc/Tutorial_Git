@@ -20,6 +20,7 @@ Acesse a pasta do seu projeto, independente se já contém arquivos ou não e ex
 ```
 $ git init
 ```
+
 > Caso você queira clonar um repositório pré-existente utilize o comando:
 
 ```
@@ -43,11 +44,13 @@ O commit cria um marco em sua linha do tempo, onde todas as alterações agora e
 ```
 $ git remote add origin <link do seu repositório>
 ```
+
 Finalmente chegou a hora de enviar seu código para o repositório remoto, com o comando:
 
 ```
 $ git push origin master
 ```
+
 **Agora seu código ja estará visível no github.**
 
 ## Padronizando mensagens de commit
@@ -57,12 +60,12 @@ A padronização das mensagens de commit organiza e facilita a revisão do códi
 > O padrão sugerido usa como referência os descritos pelo [commitizen](https://github.com/commitizen/cz-cli).
 
 
-* feat:< mensagem >- Usado para descrever a adição de uma nova funcionalidade no código.
-* fix:< mensagem > - Usado para quando um bug é removido do código.
-* docs:< mensagem > - Usado para mudanças somente na documentção do projeto.
-* refactor:< mensagem > - Usado para quando a mudança se refere ao refatoramento.
-* perf:< mensagem > - Usado para código de melhoria de performace.
-* chore:< mensagem > - Usado para se referir a expansão de uma feature.
+* `feat:<mensagem>` - Usado para descrever a adição de uma nova funcionalidade no código.
+* `fix:<mensagem>` - Usado para quando um bug é removido do código.
+* `docs:< mensagem >` - Usado para mudanças somente na documentção do projeto.
+* `refactor:<mensagem>` - Usado para quando a mudança se refere ao refatoramento.
+* `perf:<mensagem>` - Usado para código de melhoria de performace.
+* `chore:<mensagem>` - Usado para se referir a expansão de uma feature.
 
 ## Fluxo de trabalho
 
@@ -74,7 +77,13 @@ Após o clone do repositório o desenvolvedor deverá criar uma branch usando os
 $ git branch feat/<nome da feature>
 ```
 
-O push do commit feito nesta branch é finalizado pelo comando:
+Para entrar na branch que acabou de ser criada, insira o comando:
+
+```
+$ git checkout feat/<nome da feature>
+```
+
+O `push` do commit feito nesta branch é finalizado pelo comando:
 
 ```
 $ git push origin feat/<nome da feature>
