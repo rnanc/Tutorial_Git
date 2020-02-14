@@ -5,6 +5,7 @@
 Tutorial de uso básico do git com sugestão de padrão de commit e fluxo de trabalho.
 
 ## Sumário
+- [Conceitos](#conceitos)
 - [Criando o primeiro repositório](#criando-o-repositório-e-fazendo-o-primeiro-push)
 - [Padronizando commits](#padronizando-mensagens-de-commit)
 - [Fluxo de trabalho](#fluxo-de-trabalho)
@@ -12,6 +13,9 @@ Tutorial de uso básico do git com sugestão de padrão de commit e fluxo de tra
 
 ## Via terminal
 O uso do terminal para comandos do git é recomendado pois nos garante maior controle sobre as operações.
+
+## Conceitos
+Para iniciantes não familiarizados com os conceitos e nomenclaturas do `git`, é recomendável que leia antes as informações disponíveis [neste repositório](https://gist.github.com/victorsenam/8580499).
 
 ## Criando o repositório e fazendo o primeiro push
 
@@ -21,7 +25,9 @@ Acesse a pasta do seu projeto, independente se já contém arquivos ou não e ex
 $ git init
 ```
 
-> Caso você queira clonar um repositório pré-existente utilize o comando:
+> Ao rodar o comando `$ git init`, será criado um arquivo na pasta do seu projeto chamado `gitignore`, neste arquivo deverá ser incluído o nome de outros arquivos dentro do seu projeto que você deseja que sejam ignorados durante um `commit`, por exemplo a pasta  `node modules`. 
+
+Caso você queira clonar um repositório pré-existente utilize o comando:
 
 ```
 $ git clone <link do seu repositório>
@@ -32,6 +38,8 @@ Após ter terminado todas as alterações necessárias, adione as mudanças que 
 ```
 $ git add .
 ```
+
+> o comando `$ git add .`  adicionará todos os arquivos que sofram alteração, se você quiser adicionar arquivos específicos utilize o comando `$ git add <nome do arquivo>` 
 
 Tendo todas as mudanças adicionadas e prontas para um commit, execute o commit com o comando:
 
@@ -71,7 +79,7 @@ A padronização das mensagens de commit organiza e facilita a revisão do códi
 
 > Para um melhor e mais seguro fluxo de trabalho, os desenvolvedores sempre devem trabalhar em branches.
 
-Após o clone do repositório o desenvolvedor deverá criar uma branch usando os prefixos de commit para especificar em que está trabalhando:
+Após o clone do repositório, o desenvolvedor deverá criar uma branch usando os prefixos de commit para especificar em que está trabalhando:
 
 ```
 $ git branch feat/<nome da feature>
@@ -90,6 +98,12 @@ $ git push origin feat/<nome da feature>
 ```
 
 > Assim que a branch estiver pronta para o **merge**, o desenvolvedor deverá acessar o github e criar um **pull request**, assim o administrador do repositório poderá revisar o codigo e realizará o **merge** e **delete** da branch.
+
+Caso seu repositório local esteja desatualizado em comparação ao repositório online, você pode atualizar o seu código local pelo comando:
+
+```
+$ git pull <nome da branch>
+```
 
 ## Vídeos
 
