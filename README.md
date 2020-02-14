@@ -107,6 +107,7 @@ $ git pull <nome da branch>
 ```
 
 ## Resolvendo conflitos
+![conflito-icon](https://github.com/rnanc/Tutorial_Git/blob/master/icons8-conflito-48.png)
 
 Conflitos no código podem aparecer durante o `merge` de uma branch ou mesmo se duas pessoas estão trabalhando na mesma branch, aqui irei sugerir formas de como esses conflitos podem ser tratados.
 
