@@ -111,7 +111,7 @@ $ git pull <nome da branch>
 
 Conflitos no código podem aparecer durante o `merge` de uma branch ou mesmo se duas pessoas estão trabalhando na mesma branch, aqui irei sugerir formas de como esses conflitos podem ser tratados.
 
-Se você está trabalhando com mais de uma pessoa na mesma branch ou por algum motivo tem uma versão desatualizada do projeto, o comando `push` acusará conflito e para tratar este erro é bem simples, rode no seu terminal o comando `$ git pull <nome da branch>`, isso atualizará seu projeto e se houver conflitos seu editor de texto acusará onde está e pedirá para que você os resolva antes de executar o `push` novamente.
+Se você está trabalhando com mais de uma pessoa na mesma branch ou por algum motivo tem uma versão desatualizada do projeto, o comando `push` acusará conflito e para tratar este erro é bem simples, rode no seu terminal o comando `$ git pull`, isso atualizará seu projeto e se houver conflitos seu editor de texto acusará onde está e pedirá para que você os resolva antes de executar o `push` novamente.
 
 Agora se o conflito foi detectado durante a criação de um `pull request` de uma branch com a branch `master`, existem duas ações que você poderá tomar:
 
